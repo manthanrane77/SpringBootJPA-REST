@@ -1,0 +1,15 @@
+package com.app.service;
+
+import java.util.List;
+
+import com.app.entity.Employee;
+
+public interface EmployeeService {
+	List<Employee> findAll();
+	Employee findById(int id);
+	Employee save(Employee e);
+	void deleteById(int id);
+	int getEmployeeCount();
+	List<Employee> findByFirstName(String name);
+
+}
